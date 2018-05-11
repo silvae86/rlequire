@@ -16,12 +16,12 @@ https://stackoverflow.com/questions/10265798/determine-project-root-from-a-runni
 ## How to use?
 
 ````bash
-npm install rrequire --save
+npm install rlequire --save
 ````
 
 ````node
-const rrequire = require("rrequire")
-const Client = rrequire("your-app", "./src/model/client.js", [optional, boolean] forceRecheck).Client;
+const rlequire = require("rlequire")
+const Client = rlequire("your-app", "./src/model/client.js", [optional, boolean] forceRecheck).Client;
 ````
 
 rrequire will search the current folder of the file from which it is invoked and the entire upstream directory until the root of the filesystem. Whenever a `package.json` file is detected, it will attempt to parse it. 
