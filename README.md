@@ -8,7 +8,7 @@
 
 ## Why is this needed?
 
-Because NodeJS does not have a robust way of determining the root path of a running application. Sure, when your app is a couple of files you dont have problems, but as it starts growing, with modular parts and plugins, you want to be sure you can locate the actual root of your application.
+Because NodeJS does not have a robust way of determining the root path of a running application. Sure, when your app is a couple of files you dont have problems, but as it starts growing, with modular parts and plugins, you want to be sure you can locate the actual root of your application. Also, mocha makes your `__basedir` stop working.
 
 https://stackoverflow.com/questions/10265798/determine-project-root-from-a-running-node-js-application
 
