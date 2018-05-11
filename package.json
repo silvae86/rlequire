@@ -1,5 +1,5 @@
 {
-  "name": "rrequire",
+  "name": "rlequire",
   "version": "1.0.0",
   "description": "A module for finding the root of a project by looking at the contents of package.json file up the file hierarchy.",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/silvae86/root-finder.git"
+    "url": "git+https://github.com/silvae86/rlrequire.git"
   },
   "keywords": [
     "nodejs",
