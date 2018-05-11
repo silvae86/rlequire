@@ -25,7 +25,6 @@ const findPackageJSONRoot = function(appName)
                 }
                 catch (e)
                 {
-                    throw new Error("Error while parsing file " + pathPackageJSON);
                 }
             }
         }
@@ -40,7 +39,7 @@ const RootRequire = function(appName, relativePath, forceRescan)
     let rootLocation;
     if(forceRescan)
     {
-        RootRequire._location[appName] = findPackageJSONRoot(appName);
+        rootLocation = RootRequire._location[appName] = findPackageJSONRoot(appName);
     }
     else
     {

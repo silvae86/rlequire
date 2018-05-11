@@ -1,5 +1,5 @@
-const util = require("../../../src/util");
-const rrequire = require("../../../src/rrequire");
+const util = require("../../../../src/util");
+const rrequire = require("../../../../src/rrequire");
 
 const chai = require("chai");
 const should = chai.should();
@@ -61,6 +61,18 @@ describe("[Logic]", function (done)
             rrequire("mock-app", "mock-app").MockApp.testField.should.equal("mockAppTestField");
             done();
         });
+
+        it("Should find the mock-app and get a field contained in it after caching", function (done)
+        {
+            rrequire("mock-app", "mock-app").MockApp.testField.should.equal("mockAppTestField");
+            done();
+        });
+
+        it("Should find the mock-app and get a field contained in it forcing rescan of directories", function (done)
+        {
+            rrequire("mock-app", "mock-app", true).MockApp.testField.should.equal("mockAppTestField");
+            done();
+        });
     });
 
     describe("RRequire mock-subapp", function ()
@@ -76,6 +88,18 @@ describe("[Logic]", function (done)
             rrequire("mock-subapp", "mock-subapp").MockSubApp.testField.should.equal("mockSubAppTestField");
             done();
         });
+
+        it("Should find the mock-app and get a field contained in it after caching", function (done)
+        {
+            rrequire("mock-app", "mock-app").MockApp.testField.should.equal("mockAppTestField");
+            done();
+        });
+
+        it("Should find the mock-app and get a field contained in it forcing rescan of directories", function (done)
+        {
+            rrequire("mock-app", "mock-app", true).MockApp.testField.should.equal("mockAppTestField");
+            done();
+        });
     });
 
     describe("RRequire non-existent app", function ()
@@ -87,6 +111,18 @@ describe("[Logic]", function (done)
                 rrequire("aiaimaria", "mock-subapp").MockSubApp.testFunction()
             })
             .should.throw(Error);
+            done();
+        });
+    });
+
+    describe("RRequire malformed package.json", function ()
+    {
+        it("Should throw error for malformed package.json file", function (done)
+        {
+            (function()
+            {
+                rrequire("malformed-package-json", "mock-subapp").MockSubApp.testFunction()
+            }).should.throw(Error);
             done();
         });
     });
