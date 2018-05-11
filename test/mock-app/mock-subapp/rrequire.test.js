@@ -77,5 +77,18 @@ describe("[Logic]", function (done)
             done();
         });
     });
+
+    describe("RRequire non-existent app", function ()
+    {
+        it("Should not find the aiaimaria app", function (done)
+        {
+            (function()
+            {
+                rrequire("aiaimaria", "mock-subapp").MockSubApp.testFunction()
+            })
+            .should.throw(Error);
+            done();
+        });
+    });
 });
 

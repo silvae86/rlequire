@@ -1,57 +1,73 @@
-var fs = require("fs");
-var path = require("path");
-var _ = require("underscore");
+const fs = require("fs");
+const path = require("path");
+const _ = require("underscore");
 
-var findPackageJSONRoot = function(appName)
+const findPackageJSONRoot = function(appName)
 {
-    const currentLocation = __dirname;
-    while(currentLocation)
+    let currentLocation = path.dirname(module.parent.filename);
+    while(currentLocation !== path.resolve(currentLocation, ".."))
     {
-        const packageJSONPath = _.find(fs.readdirSync(dirname), "package.json");
-
-        if(packageJSONPath)
+        if (fs.lstatSync(currentLocation).isDirectory())
         {
-            try
+            const folderContents = fs.readdirSync(currentLocation);
+            const packageJSONPathExists = ( folderContents.indexOf("package.json") > -1 );
+            const pathPackageJSON = path.join(currentLocation, "package.json");
+
+            if (packageJSONPathExists)
             {
-                var packageJSON = JSON.parse(packageJSONPath);
-                if(packageJSON.name === appName)
+                try
                 {
-                    return currentLocation;
+                    let packageJSON = require(pathPackageJSON);
+                    if (packageJSON.name === appName)
+                    {
+                        return currentLocation;
+                    }
+                }
+                catch (e)
+                {
+                    throw new Error("Error while parsing file " + pathPackageJSON);
                 }
             }
-            catch(e)
-            {
-                throw new Error("Error while parsing file " + packageJSONPath);
-            }
         }
+
+        currentLocation = path.resolve(currentLocation, "..");
     }
     return null;
 };
 
-var RootFinder = function(appName, relativePath, forceRescan)
+const RootRequire = function(appName, relativePath, forceRescan)
 {
-    var rootLocation;
+    let rootLocation;
     if(forceRescan)
     {
-        RootFinder._location = findPackageJSONRoot(appName);
+        RootRequire._location[appName] = findPackageJSONRoot(appName);
     }
     else
     {
-        if(RootFinder._location)
+        if(RootRequire._location[appName])
         {
-            rootLocation = RootFinder._location;
+            rootLocation = RootRequire._location[appName];
         }
         else
         {
             rootLocation = findPackageJSONRoot(appName);
-            RootFinder._location = rootLocation;
+            RootRequire._location[appName] = rootLocation;
         }
     }
 
-    return require(path.resolve(rootLocation, relativePath));
+
+    if(rootLocation)
+    {
+        const pathToBeRequired = path.resolve(rootLocation, relativePath);
+        return require(pathToBeRequired);
+    }
+    else
+    {
+        throw new Error("Unable to find root path of app " + appName);
+    }
 };
 
-RootFinder._location = null;
+RootRequire._location = {};
 
-module.exports = RootFinder;
+module.exports = RootRequire;
 
