@@ -28,4 +28,5 @@ rrequire will search the current folder of the file from which it is invoked and
 
  - If the `name` field in the package.json matches `your-app`, it will detect that folder as the root of the app.
  - If the file path `"./src/model/client.js"` exists, relatively to the detected root folder, it will require the file for you.
+ - The expensive directory traversal operation is done only the first time we need to determine the root of an app, unless the `forceRescan` optional argument is specified as `true`.
 
