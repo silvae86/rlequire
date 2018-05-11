@@ -3,7 +3,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/cff4cfde36144314adbdce30226737e6)](https://www.codacy.com/app/silvae86/rrequire?utm_source=github.com&utm_medium=referral&utm_content=silvae86/rrequire&utm_campaign=Badge_Coverage)
 
 
-# rrequire
+# rlequire
 "Relative Require": A nodejs module for requiring files in paths relative to one where a specific package.json is located. 
 
 ## Why is this needed?
