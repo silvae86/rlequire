@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha test/mock-app/mock-subapp/malformed-package-json-app/rrequire.test.js",
     "calculate-coverage": "nyc --temp-directory=coverage --reporter=lcov --reporter=html npm run test",
-    "report-coverage": "node ./node_modules/coveralls/bin/coveralls.js < ./coverage/lcov.info && node ./node_modules/codeclimate-test-reporter/bin/codeclimate.js < ./coverage/lcov.info && node ./node_modules/.bin/codacy-coverage < ./coverage/lcov.info",
+    "report-coverage": "node ./node_modules/.bin/codacy-coverage < ./coverage/lcov.info",
     "fix": "eslint --fix ./src/**.js --config ./.eslintrc.json"
   },
   "repository": {
