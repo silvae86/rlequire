@@ -1,3 +1,5 @@
+"use strict";
+
 module.exports.isNull = function (object)
 {
     if (object === null)

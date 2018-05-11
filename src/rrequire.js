@@ -1,16 +1,16 @@
+"use strict";
 const fs = require("fs");
 const path = require("path");
-const _ = require("underscore");
 
-const findPackageJSONRoot = function(appName)
+const findPackageJSONRoot = function (appName)
 {
     let currentLocation = path.dirname(module.parent.filename);
-    while(currentLocation !== path.resolve(currentLocation, ".."))
+    while (currentLocation !== path.resolve(currentLocation, ".."))
     {
         if (fs.lstatSync(currentLocation).isDirectory())
         {
             const folderContents = fs.readdirSync(currentLocation);
-            const packageJSONPathExists = ( folderContents.indexOf("package.json") > -1 );
+            const packageJSONPathExists = (folderContents.indexOf("package.json") > -1);
             const pathPackageJSON = path.join(currentLocation, "package.json");
 
             if (packageJSONPathExists)
@@ -25,6 +25,7 @@ const findPackageJSONRoot = function(appName)
                 }
                 catch (e)
                 {
+                    /* continue regardless of error */
                 }
             }
         }
@@ -34,16 +35,16 @@ const findPackageJSONRoot = function(appName)
     return null;
 };
 
-const RootRequire = function(appName, relativePath, forceRescan)
+const RootRequire = function (appName, relativePath, forceRescan)
 {
     let rootLocation;
-    if(forceRescan)
+    if (forceRescan)
     {
         rootLocation = RootRequire._location[appName] = findPackageJSONRoot(appName);
     }
     else
     {
-        if(RootRequire._location[appName])
+        if (RootRequire._location[appName])
         {
             rootLocation = RootRequire._location[appName];
         }
@@ -54,16 +55,13 @@ const RootRequire = function(appName, relativePath, forceRescan)
         }
     }
 
-
-    if(rootLocation)
+    if (rootLocation)
     {
         const pathToBeRequired = path.resolve(rootLocation, relativePath);
         return require(pathToBeRequired);
     }
-    else
-    {
-        throw new Error("Unable to find root path of app " + appName);
-    }
+
+    throw new Error("Unable to find root path of app " + appName);
 };
 
 RootRequire._location = {};

@@ -1,10 +1,13 @@
 {
   "name": "rrequire",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A module for finding the root of a project by looking at the contents of package.json file up the file hierarchy.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/mock-app/mock-subapp/malformed-package-json-app/rrequire.test.js",
+    "calculate-coverage": "nyc --temp-directory=coverage --reporter=lcov --reporter=html npm run test",
+    "report-coverage": "node ./node_modules/coveralls/bin/coveralls.js < ./coverage/lcov.info && node ./node_modules/codeclimate-test-reporter/bin/codeclimate.js < ./coverage/lcov.info && node ./node_modules/.bin/codacy-coverage < ./coverage/lcov.info",
+    "fix": "eslint --fix ./src/**.js --config ./.eslintrc.json"
   },
   "repository": {
     "type": "git",
@@ -26,5 +29,14 @@
     "mocha": "^5.1.1",
     "underscore": "^1.9.0",
     "uuid": "^3.2.1"
+  },
+  "devDependencies": {
+    "codacy-coverage": "^3.0.0",
+    "codeclimate-test-reporter": "^0.5.0",
+    "coveralls": "^3.0.1",
+    "eslint": "^4.19.1",
+    "eslint-config-strict-standard": "^3.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0"
   }
 }
