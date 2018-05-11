@@ -1,5 +1,10 @@
+[![Build Status](https://travis-ci.org/silvae86/rrequire.svg?branch=master)](https://travis-ci.org/silvae86/rrequire)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/cff4cfde36144314adbdce30226737e6)](https://www.codacy.com/app/silvae86/rrequire?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=silvae86/rrequire&amp;utm_campaign=Badge_Grade)
+
+
+
 # rrequire
-"Root Require": A nodejs module for requiring files in paths relative to one where a specific package.json is located. 
+"Relative Require": A nodejs module for requiring files in paths relative to one where a specific package.json is located. 
 
 ## Why is this needed?
 
