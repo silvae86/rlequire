@@ -22,7 +22,9 @@
   },
   "homepage": "https://github.com/silvae86/root-finder#readme",
   "dependencies": {
+    "chai": "^4.1.2",
     "mocha": "^5.1.1",
-    "underscore": "^1.9.0"
+    "underscore": "^1.9.0",
+    "uuid": "^3.2.1"
   }
 }
