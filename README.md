@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/silvae86/rrequire.svg?branch=master)](https://travis-ci.org/silvae86/rlequire)
+[![Build Status](https://travis-ci.org/silvae86/rlequire.svg?branch=master)](https://travis-ci.org/silvae86/rlequire)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/cff4cfde36144314adbdce30226737e6)](https://www.codacy.com/app/silvae86/rrequire?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=silvae86/rrequire&amp;utm_campaign=Badge_Grade)
 [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/cff4cfde36144314adbdce30226737e6)](https://www.codacy.com/app/silvae86/rrequire?utm_source=github.com&utm_medium=referral&utm_content=silvae86/rrequire&utm_campaign=Badge_Coverage)
 [![npm version](https://badge.fury.io/js/rlrequire.svg)](https://badge.fury.io/js/rlrequire)
