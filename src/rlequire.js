@@ -4,7 +4,7 @@ const path = require("path");
 
 const findPackageJSONRoot = function (appName)
 {
-    let currentLocation = path.dirname(module.parent.filename);
+    let currentLocation = path.dirname(module.parent.parent.filename);
     while (currentLocation !== path.resolve(currentLocation, ".."))
     {
         if (fs.lstatSync(currentLocation).isDirectory())
@@ -66,5 +66,4 @@ const RootRequire = function (appName, relativePath, forceRescan)
 
 RootRequire._location = {};
 
-module.exports = RootRequire;
-
+module.exports.RootRequire = RootRequire;
