@@ -1,3 +1,3 @@
 "use strict";
 
-module.exports = require("./src/rlequire").RootRequire;
+module.exports = require("./src/rlequire").RelativeRequire;

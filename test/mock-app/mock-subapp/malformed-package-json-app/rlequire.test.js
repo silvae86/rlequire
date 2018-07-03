@@ -75,6 +75,15 @@ describe("[Logic]", function (done)
         });
     });
 
+    describe("RLequire existant app, forcing rescan", function ()
+    {
+        it("Should find the mock-app and run a function in a file contained in it, rescanning", function (done)
+        {
+            rlequire("mock-app", "mock-app", true).MockApp.testField.should.equal("mockAppTestField");
+            done();
+        });
+    });
+
     describe("RLequire mock-subapp", function ()
     {
         it("Should find the mock-subapp and run a function in a file contained in it", function (done)

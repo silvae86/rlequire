@@ -2,6 +2,8 @@
 const fs = require("fs");
 const path = require("path");
 
+let RelativeRequire;
+
 const findPackageJSONRoot = function (appName)
 {
     let currentLocation = path.dirname(module.parent.parent.filename);
@@ -35,23 +37,33 @@ const findPackageJSONRoot = function (appName)
     return null;
 };
 
-const RootRequire = function (appName, relativePath, forceRescan)
+const getRootFolder = function (appName, forceRescan)
+{
+    if (forceRescan)
+    {
+        RelativeRequire._location[appName] = findPackageJSONRoot(appName);
+    }
+
+    return RelativeRequire._location[appName];
+};
+
+RelativeRequire = function (appName, relativePath, forceRescan)
 {
     let rootLocation;
     if (forceRescan)
     {
-        rootLocation = RootRequire._location[appName] = findPackageJSONRoot(appName);
+        rootLocation = getRootFolder(appName, forceRescan);
     }
     else
     {
-        if (RootRequire._location[appName])
+        if (RelativeRequire._location[appName])
         {
-            rootLocation = RootRequire._location[appName];
+            rootLocation = RelativeRequire._location[appName];
         }
         else
         {
             rootLocation = findPackageJSONRoot(appName);
-            RootRequire._location[appName] = rootLocation;
+            RelativeRequire._location[appName] = rootLocation;
         }
     }
 
@@ -64,6 +76,8 @@ const RootRequire = function (appName, relativePath, forceRescan)
     throw new Error("Unable to find root path of app " + appName);
 };
 
-RootRequire._location = {};
+RelativeRequire.getRootFolder = getRootFolder;
 
-module.exports.RootRequire = RootRequire;
+RelativeRequire._location = {};
+
+module.exports.RelativeRequire = RelativeRequire;
