@@ -47,6 +47,12 @@ const getRootFolder = function (appName, forceRescan)
     return RelativeRequire._location[appName];
 };
 
+const absPathInApp = function (appName, relativePath, forceRescan)
+{
+    const rootLocation = getRootFolder(appName, forceRescan);
+    return path.resolve(rootLocation, relativePath);
+};
+
 RelativeRequire = function (appName, relativePath, forceRescan)
 {
     let rootLocation;
@@ -77,6 +83,8 @@ RelativeRequire = function (appName, relativePath, forceRescan)
 };
 
 RelativeRequire.getRootFolder = getRootFolder;
+
+RelativeRequire.absPathInApp = absPathInApp;
 
 RelativeRequire._location = {};
 

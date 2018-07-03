@@ -5,7 +5,7 @@ const MockSubApp = function()
 
 MockSubApp.testFunction = function()
 {
-    return "mockSubAppFunctionResult"
+    return "mockSubAppFunctionResult";
 };
 
 MockSubApp.testField = "mockSubAppTestField";

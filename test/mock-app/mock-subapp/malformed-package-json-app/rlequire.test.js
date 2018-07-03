@@ -111,6 +111,23 @@ describe("[Logic]", function (done)
         });
     });
 
+    describe("RLequire get absolute path in mock-app", function ()
+    {
+        it("Should find the mock-subapp and run a function in a file contained in it", function (done)
+        {
+            const mockSubApp = require(rlequire.absPathInApp("mock-app", "./mock-subapp/mock-subapp.js")).MockSubApp;
+            mockSubApp.testFunction().should.equal("mockSubAppFunctionResult");
+            done();
+        });
+
+        it("Should not find the mock-subapp and run a function in a file contained in it, on the same folder", function (done)
+        {
+            const mockSubApp = require(rlequire.absPathInApp("mock-subapp", "./mock-subapp.js")).MockSubApp;
+            mockSubApp.testFunction().should.equal("mockSubAppFunctionResult");
+            done();
+        });
+    });
+
     describe("RLequire non-existent app", function ()
     {
         it("Should not find the aiaimaria app", function (done)

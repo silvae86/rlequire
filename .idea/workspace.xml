@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="80863622-384a-4730-9114-f980ee485568" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rlequire.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/rlequire.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/mock-app/mock-subapp/malformed-package-json-app/rlequire.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/mock-app/mock-subapp/malformed-package-json-app/rlequire.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/mock-app/mock-subapp/mock-subapp.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/mock-app/mock-subapp/mock-subapp.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,20 +35,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rlequire.test.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="rlequire.test.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/mock-app/mock-subapp/malformed-package-json-app/rlequire.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="81" column="102" lean-forward="true" selection-start-line="81" selection-start-column="102" selection-end-line="81" selection-end-column="102" />
+            <state relative-caret-position="216">
+              <caret line="119" column="19" lean-forward="true" selection-start-line="119" selection-start-column="19" selection-end-line="119" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rlequire.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="runnable.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/mocha/lib/runnable.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="343" column="6" selection-start-line="343" selection-start-column="6" selection-end-line="343" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mock-subapp.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/mock-app/mock-subapp/mock-subapp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rlequire.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/rlequire.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="54" column="59" lean-forward="true" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
+            <state relative-caret-position="182">
+              <caret line="81" column="4" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -56,7 +74,7 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="447">
               <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
             </state>
           </provider>
@@ -80,7 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/mock-app/mock-subapp/mock-subapp.js" />
         <option value="$PROJECT_DIR$/test/mock-app/mock-app.js" />
         <option value="$PROJECT_DIR$/test/rrequire.test.js" />
         <option value="$PROJECT_DIR$/test/mock-app/mock-subapp/rrequire.test.js" />
@@ -94,8 +111,9 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/test/mock-app/mock-subapp/malformed-package-json-app/rlequire.test.js" />
+        <option value="$PROJECT_DIR$/test/mock-app/mock-subapp/mock-subapp.js" />
         <option value="$PROJECT_DIR$/src/rlequire.js" />
+        <option value="$PROJECT_DIR$/test/mock-app/mock-subapp/malformed-package-json-app/rlequire.test.js" />
       </list>
     </option>
   </component>
@@ -111,8 +129,16 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
   <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+      <path value="$PROJECT_DIR$/test/mock-app/mock-subapp/malformed-package-json-app/package.json" />
+      <path value="$PROJECT_DIR$/test/mock-app/mock-subapp/package.json" />
+      <path value="$PROJECT_DIR$/test/mock-app/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
@@ -139,6 +165,24 @@
               <item name="rlequire" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="rlequire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rlequire" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rlequire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rlequire" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="mock-app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rlequire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rlequire" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="mock-app" type="462c0819:PsiDirectoryNode" />
+              <item name="mock-subapp" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -152,8 +196,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
@@ -216,66 +263,76 @@
       <workItem from="1527271878613" duration="135000" />
       <workItem from="1527272032166" duration="265000" />
       <workItem from="1527357468415" duration="232000" />
-      <workItem from="1530628692678" duration="1493000" />
+      <workItem from="1530628692678" duration="1697000" />
+      <workItem from="1530633915926" duration="807000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unnamed - 2018.05.25 at 19h 16m 18s.xml">
+    <history-entry file="Unnamed - 2018.07.03 at 17h 12m 48s.xml">
       <configuration name="Unnamed" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Unnamed - 2018.05.25 at 19h 17m 39s.xml">
+    <history-entry file="Unnamed - 2018.07.03 at 17h 15m 24s.xml">
       <configuration name="Unnamed" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Unnamed - 2018.05.25 at 19h 18m 02s.xml">
+    <history-entry file="Unnamed - 2018.07.03 at 17h 15m 31s.xml">
       <configuration name="Unnamed" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Unnamed - 2018.07.03 at 16h 48m 38s.xml">
+    <history-entry file="Unnamed - 2018.07.03 at 17h 15m 33s.xml">
       <configuration name="Unnamed" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Unnamed - 2018.07.03 at 16h 48m 45s.xml">
+    <history-entry file="Unnamed - 2018.07.03 at 17h 15m 54s.xml">
       <configuration name="Unnamed" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Unnamed - 2018.07.03 at 16h 49m 16s.xml">
+    <history-entry file="Unnamed - 2018.07.03 at 17h 16m 24s.xml">
       <configuration name="Unnamed" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Unnamed - 2018.07.03 at 16h 49m 33s.xml">
+    <history-entry file="Unnamed - 2018.07.03 at 17h 17m 54s.xml">
       <configuration name="Unnamed" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Unnamed - 2018.07.03 at 16h 49m 49s.xml">
+    <history-entry file="Unnamed - 2018.07.03 at 17h 18m 10s.xml">
       <configuration name="Unnamed" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Unnamed - 2018.07.03 at 16h 51m 32s.xml">
+    <history-entry file="Unnamed - 2018.07.03 at 17h 18m 26s.xml">
       <configuration name="Unnamed" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Unnamed - 2018.07.03 at 16h 51m 37s.xml">
+    <history-entry file="Unnamed - 2018.07.03 at 17h 18m 27s.xml">
       <configuration name="Unnamed" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10883000" />
+    <option name="totallyTimeSpent" value="11894000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49376115" weight="0.20902778" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49376115" visible="true" weight="0.20902778" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32820514" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.373599" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37307692" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="right" id="Coverage" order="3" side_tool="true" visible="true" weight="0.3298611" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.24907847" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24861111" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.2652553" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39975095" />
-      <window_info id="Favorites" order="2" sideWeight="0.5062389" side_tool="true" weight="0.209584" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39871794" />
+      <window_info id="Favorites" order="2" sideWeight="0.5062389" side_tool="true" weight="0.20902778" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" x="100" y="123" width="1400" height="673" id="Documentation" order="3" type="FLOATING" />
+      <window_info anchor="right" id="Coverage" order="3" side_tool="true" visible="true" weight="0.3298611" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
     </layout>
@@ -284,21 +341,21 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49376115" weight="0.20902778" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.24907847" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49376115" visible="true" weight="0.20902778" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24861111" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.373599" />
+      <window_info anchor="bottom" id="TODO" order="6" visible="true" weight="0.32820514" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.373599" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39975095" />
       <window_info anchor="right" x="100" y="123" width="1400" height="673" id="Documentation" order="3" type="FLOATING" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.2652553" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Coverage" order="4" side_tool="true" visible="true" weight="0.3298611" />
-      <window_info id="Favorites" order="2" sideWeight="0.5062389" side_tool="true" weight="0.209584" />
+      <window_info id="Favorites" order="2" sideWeight="0.5062389" side_tool="true" weight="0.20902778" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,10 +373,16 @@
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/rlequire.js</url>
-          <line>41</line>
+          <url>file://$PROJECT_DIR$/test/mock-app/mock-subapp/malformed-package-json-app/rlequire.test.js</url>
+          <line>118</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="35" />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/test/mock-app/mock-subapp/malformed-package-json-app/rlequire.test.js</url>
+          <line>125</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -330,16 +393,22 @@
           <properties />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="36" />
+      <option name="time" value="43" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="mocha-javascript-test-runner">
         <watch expression="rrequire(&quot;mock-app&quot;, &quot;mock-app&quot;)" language="JavaScript" />
+        <watch expression="require(rlequire.absPathInApp(&quot;mock-app&quot;, &quot;./mock-subapp/mock-subapp.js&quot;))" language="JavaScript" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>require(rlequire.absPathInApp(&quot;mock-app&quot;, &quot;./mock-subapp/mock-subapp.js&quot;))</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>rrequire(&quot;mock-app&quot;, &quot;mock-app&quot;)</expression-string>
         <language-id>JavaScript</language-id>
@@ -348,13 +417,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -621,13 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/mock-app/mock-subapp/mock-subapp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/mock-app/mock-app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -652,13 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -666,17 +714,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/mock-app/mock-subapp/malformed-package-json-app/rlequire.test.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="81" column="102" lean-forward="true" selection-start-line="81" selection-start-column="102" selection-end-line="81" selection-end-column="102" />
+        <state relative-caret-position="447">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mocha/lib/runnable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="343" column="6" selection-start-line="343" selection-start-column="6" selection-end-line="343" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/mock-app/mock-subapp/mock-subapp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rlequire.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="54" column="59" lean-forward="true" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
+        <state relative-caret-position="182">
+          <caret line="81" column="4" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/mock-app/mock-subapp/malformed-package-json-app/rlequire.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="119" column="19" lean-forward="true" selection-start-line="119" selection-start-column="19" selection-end-line="119" selection-end-column="19" />
         </state>
       </provider>
     </entry>
