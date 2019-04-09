@@ -4,6 +4,8 @@
 [![npm version](https://badge.fury.io/js/rlequire.svg)](https://badge.fury.io/js/rlequire)
 
 # rlequire
+Tired of require("../../../../../whatever") ????
+
 "Relative Require": A nodejs module for requiring files in paths relative to one where a specific package.json is located. 
 
 ## Why is this needed?
